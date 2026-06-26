@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="CustomVibe makes custom photo magnets for gifts, events, teams, businesses, and communities. Find your tribe at Custom Vibe."
+    />
+    <title>CustomVibe | Custom Magnet Making</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="logo" href="#top" aria-label="CustomVibe home">CustomVibe</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          Menu
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#design">Design</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#how-it-works">How it works</a>
+          <a class="nav-cta" href="#quote">Request a quote</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Custom photo magnets made for your people</p>
+          <h1>Find your tribe at Custom Vibe</h1>
+          <p class="hero-text">
+            Turn your favourite photos, artwork, logos, and event memories into custom magnets that are easy to share, gift, and collect.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#design">Try the magnet preview</a>
+            <a class="button secondary" href="#pricing">View pricing</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Sample custom magnets">
+          <div class="sample-magnet one">Family day</div>
+          <div class="sample-magnet two">Team pride</div>
+          <div class="sample-magnet three">Event favour</div>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div>
+          <p class="section-kicker">Made for every vibe</p>
+          <h2>Personal magnets for memories, communities, and brands</h2>
+        </div>
+        <p>
+          CustomVibe helps you create magnets for birthdays, weddings, markets, school groups, sports teams, small businesses, family photos, and personalised gifts.
+        </p>
+      </section>
+
+      <section class="section design-section" id="design">
+        <div class="section-heading">
+          <p class="section-kicker">Design preview</p>
+          <h2>Upload your image and preview it as a magnet</h2>
+          <p>
+            Choose an image from your device to see a quick mockup. This preview is for planning only. Final print quality depends on the uploaded image resolution.
+          </p>
+        </div>
+
+        <div class="designer">
+          <div class="upload-panel">
+            <label class="upload-box" for="image-upload">
+              <span class="upload-title">Import your image</span>
+              <span class="upload-help">JPG, PNG, or WebP files work best</span>
+              <input id="image-upload" type="file" accept="image/png,image/jpeg,image/webp" />
+            </label>
+
+            <label class="field-label" for="magnet-shape">Magnet shape</label>
+            <select id="magnet-shape">
+              <option value="rounded">Rounded square</option>
+              <option value="circle">Circle</option>
+              <option value="rectangle">Rectangle</option>
+            </select>
+
+            <label class="field-label" for="caption-input">Optional caption</label>
+            <input id="caption-input" type="text" maxlength="32" placeholder="Example: Our tribe" />
+
+            <p class="designer-note">
+              Tip: Use bright, clear images with the main subject near the centre for the best result.
+            </p>
+          </div>
+
+          <div class="preview-panel">
+            <div class="preview-stage">
+              <div class="magnet-preview rounded" id="magnet-preview">
+                <div class="placeholder" id="placeholder">Your image preview will appear here</div>
+                <img id="preview-image" alt="Uploaded magnet preview" hidden />
+                <div class="preview-caption" id="preview-caption" hidden></div>
+              </div>
+            </div>
+            <button class="button primary" id="reset-preview" type="button">Reset preview</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing" id="pricing">
+        <div class="section-heading">
+          <p class="section-kicker">Pricing</p>
+          <h2>Simple custom magnet packages</h2>
+          <p>Pick a starter pack or request a custom quote for larger orders.</p>
+        </div>
+        <div class="price-grid">
+          <article class="price-card">
+            <h3>Single magnet</h3>
+            <p class="price">R50</p>
+            <p>Perfect for one special photo or a sample before a larger order.</p>
+          </article>
+          <article class="price-card featured">
+            <h3>Pack of 6</h3>
+            <p class="price">R250</p>
+            <p>Great for gifts, family sets, team photos, or small celebrations.</p>
+          </article>
+          <article class="price-card">
+            <h3>Pack of 10</h3>
+            <p class="price">R400</p>
+            <p>Best value for events, markets, school groups, and brand giveaways.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section steps" id="how-it-works">
+        <div class="section-heading">
+          <p class="section-kicker">How it works</p>
+          <h2>From image to keepsake in a few easy steps</h2>
+        </div>
+        <div class="step-grid">
+          <article>
+            <span>1</span>
+            <h3>Upload or send your image</h3>
+            <p>Use the preview tool, then share your chosen image with your order details.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Confirm your order</h3>
+            <p>Choose your quantity, confirm the design, and request a custom quote if needed.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Receive your magnets</h3>
+            <p>Your custom magnets are prepared so they are ready to gift, sell, or share.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section quote" id="quote">
+        <div>
+          <p class="section-kicker">Large orders</p>
+          <h2>Need more than 10 magnets?</h2>
+          <p>
+            Custom quotes are available for larger orders, events, business branding, and repeat customers.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:hello@customvibe.example?subject=CustomVibe%20quote%20request">Request a custom quote</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>CustomVibe. Find your tribe at Custom Vibe.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
